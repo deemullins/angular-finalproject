@@ -1,4 +1,4 @@
-import { AddTask } from './../models/add-task';
+import { Task } from './../models/task';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-form.component.css']
 })
 export class TaskFormComponent implements OnInit {
-  model: AddTask = new AddTask();
+  model: Task = new Task();
   constructor() { }
 
   ngOnInit() {

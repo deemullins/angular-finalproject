@@ -1,4 +1,4 @@
-export class AddTask {
+export class Task {
     id: number;
     name: string;
 }
