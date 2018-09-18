@@ -1,3 +1,4 @@
+import { AddTask } from './../models/add-task';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-form.component.css']
 })
 export class TaskFormComponent implements OnInit {
-
+  model: AddTask = new AddTask();
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log('Submit Successful: ', this.model);
+  }
 }

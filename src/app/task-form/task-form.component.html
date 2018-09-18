@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit()">
         <div>
             <h3><label for="addTask">Add Task: </label></h3>
-            <textarea type="text" placeholder="add task" name="addTask" required [(ngModel)]="model.message"></textarea>
+            <textarea type="text" name="addTask" required [(ngModel)]="model.addTask"></textarea>
         </div>
         <div>
             <button type="submit">Submit</button>
