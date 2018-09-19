@@ -1,10 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <nav>
+    <a class="btn" routerLink="" routerLinkActive="active">Home</a>
+    <a class="btn" routerLink="task" routerLinkActive="active">Add Task</a>
+    <a class="btn" routerLink="tasks" routerLinkActive="active">Tasks</a>
+</nav>
   <h1>
     Welcome to your {{ title }}!
   </h1>
   <img width="500" alt="To-Do-List" src="../src/images/to-do-lists-toolshero-696x348.jpg">
-  <app-tasks></app-tasks>
-  <br>
-  <app-task-form></app-task-form>
 </div>
+<router-outlet></router-outlet>
